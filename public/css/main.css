@@ -1,0 +1,322 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+	/* outline: 1px solid red; */
+	list-style: none;	
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 10px;
+	font-family: Montserrat;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+figure{
+	margin: 0;
+}
+
+figure img{
+	width: 100%;
+}
+
+.hero{
+position: relative;
+width: 100vw;
+background-image: url("../img/capa-madmax2.jpg");
+height:96vh;
+color: white;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.hero:after{
+	position: absolute;
+	content: "";
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.568), rgba(128, 128, 128, 0.144), rgba(0, 0, 0, 0.568));
+}
+
+.hero-menu{
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 1.5rem;
+	z-index: 2;
+}
+
+.hero-menu > .container{
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero-logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-lista{
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.hero-lista-item{
+	width: calc(100% / 3);
+	text-align: center;
+	/* margin: 40px; */
+}
+
+.hero-lista-item a{
+transition: color 0.4s linear;
+color: white;
+}
+
+.hero-lista-item a:hover{
+	color: #e4bb23;
+	transition: color 0.4s linear;
+}
+
+.hero-usuario{
+	
+	/* width: 30%; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-usuario-foto{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.hero-usuario-foto img{
+	border-radius: 100%;
+	height: 50px;
+}
+
+
+.hero-usuario-nome{
+	font-size: 1.3rem;
+	font-weight: bold;
+	margin-left: 20px;
+}
+
+
+
+
+.hero-conteudo{
+	margin: 0 auto;
+	width: 70%;
+	max-width: 960px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	/* margin-top: 23rem; */
+}
+
+.hero-conteudo .container{
+	position: relative;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	/* grid-template-columns: 1fr 0.5fr; */
+	
+
+}
+.hero-titulo{
+	font-size: 6rem;
+	text-transform:uppercase ;
+	z-index: 2;
+	margin-top: 20rem;
+
+}
+.hero-genero{
+	
+
+}
+
+
+.hero-genero-item{
+	font-weight: lighter;
+	color: white;
+	transition: color 0.4s linear;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	margin-right: 1.2rem;
+	
+}
+
+.hero-genero-item:hover{
+	color: #e4bb23;
+	transition: color 0.4s linear;
+}
+
+
+.hero-botao{
+	padding: 16px 50px;
+	background-color: #e4bb23 ;
+	font-size: 1.3;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: filter 0.2s linear;
+	margin-bottom: 3rem;
+}
+.hero-botao:hover{
+filter: opacity(0.8);
+transition: filter 0.2s linear;
+}
+
+
+.hero-informacao p{
+	color: #e4bb23;
+}
+
+
+.catalogo{
+	width: 100%;
+	background-color: #f2f2f2;
+
+
+}
+.catalogo-menu{
+	
+}
+.catalogo-menu-lista{
+width: 70%;
+max-width: 960px;
+height: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+border-bottom: 0.5px solid rgba(0, 0, 0, 0.207);
+}
+
+.catalogo-menu-lista-item{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.catalogo-menu-lista-item a{
+	display: flex;
+	align-items: center;
+	height: 70px;
+	margin-right: 40px;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #e4bb23;
+	border-bottom: 1px solid transparent;
+}
+.catalogo-menu-lista-item a:hover{
+	border-bottom: 1px solid #e4bb23;
+	transition: border 0.2s linear;
+}
+
+.catalogo-filmes-lista{
+	width: 65%;
+	margin: 25px auto;
+}
+@supports(display: grid){
+.catalogo-filmes-lista{
+	display: grid;
+	-ms-display:grid;
+	grid-template-columns:repeat(4, 1fr);
+	-ms-grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+}
+}
+
+.filme-poster{
+	position: relative;
+
+}
+
+.filme-poster-info{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.481);
+font-size: 2rem;
+text-align: center;
+color: #e4bb23;
+text-transform: uppercase;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+opacity: 0;
+transition: opacity 0.2s linear;
+}
+
+.filme-poster-info:hover{
+	opacity: 1;
+	transition: opacity 0.2s linear;
+
+}
+.fa.fa-play{
+	margin-top: 20px;
+	color: white;
+	font-size: 5rem;
+	transition: color 0.2 linear;
+
+}
+.fa.fa-play:hover{
+	margin-top: 20px;
+	color: #e4bb23;
+	transition: color 0.2 linear;
+
+}
+
+.filme-poster-link{
+
+}
+
+.filme-sinopse{
+
+}
+.filme-sinopse-titulo{
+
+}
+
+.sinopse-genero{
+
+}
+
+.sinopse-genero-item{
+
+}
+
+.filme-nota{
+
+}
